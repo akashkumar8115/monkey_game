@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  border: 2px solid blue;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("road01.jpg");
+  background-size: 100vw 100vh;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+.gameOver,
+#scoreCont {
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  top: 10vh;
+}
+#scoreCont {
+  color: rgb(238, 8, 8);
+}
+.monk {
+  background-image: url("./monkey01.png");
+  position: absolute;
+  bottom: 0;
+  height: 20vh;
+  width: 16vw;
+  background-repeat: no-repeat;
+  background-size: 16vw 18vh;
+}
+.animateMonk {
+  animation: monko 0.8s linear;
+}
+
+@keyframes monko {
+  0% {
+    bottom: 0vh;
+  }
+
+  50% {
+    bottom: 50vh;
+  }
+
+  100% {
+    bottom: 0vh;
+  }
+}
+
+#obsi {
+  background-image: url("./rakshas.png");
+  position: absolute;
+  bottom: 0;
+  /* border: 1px solid black; */
+  height: 20vh;
+  width: 15vw;
+  background-repeat: no-repeat;
+  background-size: 14vw 20vh;
+}
+
+.obstacleAni {
+  animation: obstacleAni 3.5s linear infinite;
+}
+@keyframes obstacleAni {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -10vw;
+  }
+}
+ button{
+     display: none;
+ }
+.butt {
+  display: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+#rel {
+  display: none;
+}
+#rel {
+  position: relative;
+  height: 40px;
+  width: 15vw;
+  top: 6vh;
+  margin: 5.8vw 2.8vw;
+  background-color: gray;
+  border-radius: 1000px;
+  font-size: 20px;
+  color: aqua;
+  box-shadow: 0px 2px 5px 4px black;
+  cursor: pointer;
+  left: 40vw;
+  
+}
+
+#rel:hover {
+  box-shadow: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 620px) {
+  #obsi {
+    height: 11.3vh;
+    width: 10.5vw;
+    bottom: 25vh;
+    background-size: 10vw 11vh;
+    /* border: 1px solid black; */
+    /* display: none; */
+  }
+  .obstacleAni {
+    animation: obstacleAni 3.5s linear infinite;
+  }
+  @keyframes obstacleAni {
+    0% {
+      left: 100vw;
+    }
+    100% {
+      left: -10vw;
+    }
+  }
+  .monk {
+    height: 11.3vh;
+    width: 10.5vw;
+    bottom: 25vh;
+    background-size: 10vw 11vh;
+    /* border: 1px solid black; */
+  }
+  .animateMonk {
+    animation: monko 0.8s linear;
+  }
+
+  @keyframes monko {
+    0% {
+      bottom: 25vh;
+    }
+
+    50% {
+      bottom: 75vh;
+    }
+
+    100% {
+      bottom: 25vh;
+    }
+  }
+  .butt {
+    display: flex;
+    left: 15vw;
+  }
+  
+  button {
+     text-align: center;
+    padding-left:0.4rem;
+     display:block;
+    position: relative;
+    height: 40px;
+    width: 21vw;
+    top: 68vh;
+    margin: 3vw;
+    background-color: transparent;
+    border-radius: 1000px;
+    font-size: 20px;
+    color: #0515f5;
+    box-shadow: 0px 2px 5px 4px black;
+    cursor: pointer;
+    left: 7vw;
+  }
+  
+  button:hover {
+    box-shadow: none;
+    cursor: pointer;
+  }
+  
+}
