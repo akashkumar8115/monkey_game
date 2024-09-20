@@ -43,7 +43,7 @@
   }
 
   50% {
-    bottom: 50vh;
+    bottom: 30vh;
   }
 
   100% {
@@ -136,20 +136,20 @@ button:hover {
     /* border: 1px solid black; */
   }
   .animateMonk {
-    animation: monko 0.8s linear;
+    animation: monko 1s linear;
   }
 
   @keyframes monko {
     0% {
-      bottom: 25vh;
+      bottom: 15vh;
     }
 
     50% {
-      bottom: 75vh;
+      bottom: 65vh;
     }
 
     100% {
-      bottom: 25vh;
+      bottom: 15vh;
     }
   }
   .butt {
