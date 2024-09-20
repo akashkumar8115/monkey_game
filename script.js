@@ -84,7 +84,7 @@ setInterval(() => {
           .getComputedStyle(obstacle, null)
           .getPropertyValue("animation-duration")
       );
-      newDur = aniDur - 0.1;
+      newDur = aniDur - 0;
       obstacle.style.animationDuration = newDur + "s";
       // console.log('New animation duration: ', newDur);
     }, 10);
