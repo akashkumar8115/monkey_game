@@ -43,7 +43,7 @@
   }
 
   50% {
-    bottom: 30vh;
+    bottom: 40vh;
   }
 
   100% {
@@ -141,15 +141,15 @@ button:hover {
 
   @keyframes monko {
     0% {
-      bottom: 15vh;
+      bottom: 25vh;
     }
 
     50% {
-      bottom: 65vh;
+      bottom: 75vh;
     }
 
     100% {
-      bottom: 15vh;
+      bottom: 25vh;
     }
   }
   .butt {
